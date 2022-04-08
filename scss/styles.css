@@ -35,6 +35,7 @@ header {
   border: 1px solid #e9ecef;
   background: url("../images/background_keyboard.jpg") no-repeat center center fixed;
   background-size: cover;
+  margin-top: -5px;
 }
 
 .hdrstyle {
