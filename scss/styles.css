@@ -32,7 +32,6 @@ a {
 }
 
 header {
-  border: 1px solid #e9ecef;
   background: url("../images/background_keyboard.jpg") no-repeat center center fixed;
   background-size: cover;
   margin-top: -5px;
@@ -144,4 +143,12 @@ article {
 .iconsRight p a {
   float: right;
   text-align: right;
+}
+
+.progress .progress-bar {
+  background-color: skyblue;
+}
+
+.progressBar p {
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
