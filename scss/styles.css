@@ -223,6 +223,11 @@ h1 {
     grid-column: 1/span 1;
     grid-row: 5/span 1;
   }
+
+  #info-actions {
+    display: flex;
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width: 400px) {
   div#profile-background {
@@ -244,6 +249,6 @@ h1 {
 
   #info-actions {
     display: flex;
-    margin: 25px auto 0;
+    margin-top: 50px;
   }
 }/*# sourceMappingURL=styles.css.map */
