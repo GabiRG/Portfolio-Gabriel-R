@@ -3,126 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="scss/styles.css"/>
     <title>Portfolio Raúl Guanca</title>
 </head>
 <body>
-    <div class="informImpor">
-    <header>
-      <div class="hdrstyle">
-        <div class="nBarStyle">
-        <nav class="navbar navbar-expand-xl navbar-dark bg-dark text-white">
-            <a class="navbar-brand" href="index.html"><strong>Raúl G. Guanca</strong></a>
+  <div class="grid-container">
+  <header>
+    <div class="nBarStyle">
+      <nav class="navbar navbar-expand-xl navbar-dark bg-dark text-white">
+      <a class="navbar-brand" href="index.html"><strong id="full-name">Raúl G. Guanca</strong></a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <ul class="navbar-nav flex-row ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://twitter.com/ra_gabg" target="_blank"><img src="images/twitter.png" alt="Twitter" title="Twitter" width="30px"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="https://www.instagram.com/ra_gabg/" target="_blank"><img src="images/instagram.png" alt="Instagram" title="Instagram" width="30px"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://www.facebook.com/raul.gabg" target="_blank"><img src="images/facebook.png" alt="Facebook" title="Facebook" width="30px"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://www.linkedin.com/in/ra%C3%BAl-gabriel-guanca-935828228/" target="_blank"><img src="images/linkedin.png" alt="linkedin" title="linkedin" width="30px"></a>
-                  </li>
-                </ul>
-                
-                <div class="btnLog">
-                  <button type="button" class="btn" id="glogin" onclick="signIn();"><i class="fa fa-google-plus"></i><b>login</b></button>
-                </div>
-                
-              </nav>  
-            </div>
-      </div>   
-    </header>
+          <ul class="navbar-nav flex-row ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/ra_gabg" target="_blank"><img src="images/twitter.png" alt="Twitter" title="Twitter" width="30px"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="https://www.instagram.com/ra_gabg/" target="_blank"><img src="images/instagram.png" alt="Instagram" title="Instagram" width="30px"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/raul.gabg" target="_blank"><img src="images/facebook.png" alt="Facebook" title="Facebook" width="30px"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/ra%C3%BAl-gabriel-guanca-935828228/" target="_blank"><img src="images/linkedin.png" alt="linkedin" title="linkedin" width="30px"></a>
+            </li>
+          </ul>
           
-  <section class="container">    
-    <div class="profilePicture">
-        <img src="images/gabriel_r_guanca.jpg" title="Raúl" alt="Raúl G. Guanca"/>
-      </div>
-    
-         <div class="tituloNombre">
-           <h1>Ra&uacute;l Guanca</h1>
-         </div>
-        <div>
-
-      <div class="iconsRight">
-          <p><a href="https://www.conicet.gov.ar/" target="_blank">
-            <img src="images/conicet.png" alt="CONICET">CONICET</a></p>
-      </div>
-      
-      <div class="hardSkill">
-        <p><em>Full Stack Web Developer</em></p>
-      </div>
-      <div class="iconsRight">
-          <p><a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa" target="_blank">
-              <img src="images/Ap.png" alt="AP">Argentina<br/>Programa</a></p>     
-      </div>
-      
-      <div class="lugarYContacto">
-        <p><em>Tucumán (Argentina) <a href="pages/contacto.html" title="contacto">Información de contacto</a></em></p>
-      </div>
-     </div>
-    
-      <nav>
-          <a href="#" class="btn btn-primary">Intereses</a>
-          <span class="botonWhite">
-            <a href="#" class="btn">Añadir sección</a>
-         <a href="#" class="btn">M&aacute;s...</a>
-        </span>
-      </nav>
-    <br>
+          <div class="btnLog">
+            <button type="button" class="btn" id="glogin" onclick="signIn();">login</button>
+          </div>
+          
+        </nav>  
     </div>
-    <br/>
+  </header>
+  
+  
+    <div class="card mat-card" id="first-card">
+      <div id="profile-background"><img src="images/background_keyboard.jpg"></div>
+      <div id="info" style="padding: 16px">
+        <div id="info-img">
+          <img class="profile-image" src="images/gabriel_r_guanca.jpg" alt="Raúl Guanca">
+        </div>
 
-    <article>
+        <div id="info-data">
+          <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+            <h1>Raúl Guanca</h1>
+            <div id="info-main-skill"><h2>Full Stack Web Developer</h2></div>
+            <div id="info-contact">
+              <span>Tucumán (Argentina)</span>
+              <span><a href="#">Información de contacto</a></span>
+            </div>
+          
+         
+            <img id="imgcon" src="images/conicet.png" alt="CONICET">
+            <span id="conicet"><a href="#">
+              CONICET</a></span>
+              <img id="imgap" src="images/Ap.png" alt="AP">  
+            <span id="ap"><a href="#">
+              Argentina Programa                        
+            </a></span> 
+      
+        </div>
+        </div>
+  
+
+        <div id="info-actions">
+          <button type="button" class="btn btn-primary">Intereses</button>
+          <button type="button" class="btn btn-light">Añadir sección</button>
+          <button type="button" class="btn btn-light">Más...</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card mat-card">
+      <div class="card-titles">
         <h2>Acerca de</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi veniam praesentium non ratione natus, a dolorem molestias ipsa obcaecati!</p>
-    </article>
-    <br/>
-    
-    <article>
+        <div class="btn-edit" onclick="edit_acercade()">
+             <a href="#" class="btn-right">
+               <i class="fa fa-pen"></i>
+            </a>
+        </div>
+      </div>
+      <div>
+        <p id="text-acercade">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis perspiciatis officia sed totam veritatis architecto deserunt aut asperiores nisi dolorum!</p>
+      </div>
+      <div>
+        <imput id="edit-acercade" type="text" oninput="editTextAcercaDe(this.value)" style="display:none">
+      </div>
+    </div>
+
+    <div class="card mat-card">
+      <div class="card-titles">
       <h2>Experiencia</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas voluptatem itaque odit suscipit quo nulla quisquam ea expedita fugiat. Tempora veniam animi, explicabo nisi, quaerat cumque id tempore repellendus est laborum, repellat quo esse tenetur eligendi adipisci cum accusamus ducimus!</p>
+      <div class="btn-edit" onclick="edit_experiencia()">
+        <a href="#" class="btn-right">
+          <i class="fa fa-pen"></i>
+       </a>
+   </div>
+      <p id="text-experiencia">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas voluptatem itaque odit suscipit quo nulla quisquam ea expedita fugiat. Tempora veniam animi, explicabo nisi, quaerat cumque id tempore repellendus est laborum, repellat quo esse tenetur eligendi adipisci cum accusamus ducimus!</p>
+      <div>
+        <imput id="edit-experiencia" type="text" oninput="editTextExperiencia(this.value)" style="display:none">
+      </div>
       <h2>Educaci&oacute;n</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, consequuntur optio atque fuga assumenda corporis nobis expedita corrupti qui deleniti recusandae quibusdam, suscipit architecto deserunt commodi officia dolor in ut.</p>
-    </article>
+      <div class="btn-edit" onclick="edit_educacion()">
+        <a href="#" class="btn-right">
+          <i class="fa fa-pen"></i>
+       </a>
+   </div>
+      <p id="text-educacion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, consequuntur optio atque fuga assumenda corporis nobis expedita corrupti qui deleniti recusandae quibusdam, suscipit architecto deserunt commodi officia dolor in ut.</p>
+    </div>
+    <div>
+      <imput id="edit-educacion" type="text" oninput="editTextEducacion(this.value)" style="display:none">
+    </div>
+    </div>
 
-    <br>
+    <div class="card mat-card">
+      <div class="progressBar">
+        <h2>Hard Skills & Soft Skills</h2>
+        <div class="progress">
+          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+        </div>
+        <p>HTML</p>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+        </div>
+        <p>CSS</p>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+        </div>
+         <p>JS</p>
+      </div>
+    </div>
     
-    <article class="progressBar">
-      <h2>Hard Skills & Soft Skills</h2>
-      <div class="progress">
-        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-      </div>
-      <p>HTML</p>
-      <div class="progress">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-      </div>
-      <p>CSS</p>
-      <div class="progress">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
-      </div>
-       <p>JS</p>
-    </article>
+    <div class="card mat-card">
+      <div class="card-titles">
+        <h2>Proyectos</h2>
+        <div class="btn-edit" onclick="edit_proyectos()">
+          <a href="#" class="btn-right">
+            <i class="fa fa-pen"></i>
+         </a>
+     </div>
+        <p id="text-proyectos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est magnam laudantium molestias eligendi dolore fugiat, sint dicta quos nulla laborum dignissimos a facilis. Totam voluptates eveniet deserunt culpa distinctio nobis mollitia magnam ullam velit. Quibusdam temporibus voluptatem excepturi incidunt?</p>
+    </div>
+    <div>
+      <imput id="edit-proyectos" type="text" oninput="editTextProyectos(this.value)" style="display:none">
+    </div>
+    </div>
+  </div>    
 
-    <br>
+  <script src="js/bootstrap.bundle.min.js"/></script>  
 
-    <article>
-      <h2>Proyectos</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est magnam laudantium molestias eligendi dolore fugiat, sint dicta quos nulla laborum dignissimos a facilis. Totam voluptates eveniet deserunt culpa distinctio nobis mollitia magnam ullam velit. Quibusdam temporibus voluptatem excepturi incidunt?</p>
-    </article>
-    
-  </section>
-    <script src="js/bootstrap.bundle.min.js"/></script>
+    <script>
+      function edit_acercade(){
+        document.getElementById("edit-acercade").style.display="block";
+        let texto = document.getElementById("text-acercade").innerText;
+        console.log(texto);
+      };
+
+      function editTextAcercaDe(new_text){
+        document.getElementById("text-acercade").innerText=new_text;
+      };
+
+      function logMessage(message) {
+        console.log(message + "<br>");
+      };
+
+      let texTareaAd=document.getElementById("edit-acercade")
+      textarea.addEventListener('keyup', (e) => {
+        logMessage(`key "${e.key}" released [event: keyup]`);
+        if (e.key=="Enter"){
+          document.getElementById("edit-acercade").style.display="none"
+        }
+      });
+    </script>
+
+<script>
+  function edit_experiencia(){
+    document.getElementById("edit-experiencia").style.display="block";
+    let texto = document.getElementById("text-experiencia").innerText;
+    console.log(texto);
+  };
+
+  function editTextExperiencia(new_text){
+    document.getElementById("text-experiencia").innerText=new_text;
+  };
+
+  function logMessage(message) {
+    console.log(message + "<br>");
+  };
+
+  let texTareaExp=document.getElementById("edit-experiencia")
+  textarea.addEventListener('keyup', (e) => {
+    logMessage(`key "${e.key}" released [event: keyup]`);
+    if (e.key=="Enter"){
+      document.getElementById("edit-experiencia").style.display="none"
+    }
+  });
+</script>
+
+<script>
+  function edit_educacion(){
+    document.getElementById("edit-educacion").style.display="block";
+    let texto = document.getElementById("text-educacion").innerText;
+    console.log(texto);
+  };
+
+  function editTextEducacion(new_text){
+    document.getElementById("text-educacion").innerText=new_text;
+  };
+
+  function logMessage(message) {
+    console.log(message + "<br>");
+  };
+
+  let texTareaEd=document.getElementById("edit-educacion")
+  textarea.addEventListener('keyup', (e) => {
+    logMessage(`key "${e.key}" released [event: keyup]`);
+    if (e.key=="Enter"){
+      document.getElementById("edit-educacion").style.display="none"
+    }
+  });
+</script>
+
+<script>
+  function edit_proyectos(){
+    document.getElementById("edit-proyectos").style.display="block";
+    let texto = document.getElementById("text-proyectos").innerText;
+    console.log(texto);
+  };
+
+  function editTextProyectos(new_text){
+    document.getElementById("text-proyectos").innerText=new_text;
+  };
+
+  function logMessage(message) {
+    console.log(message + "<br>");
+  };
+
+  let texTareaPry=document.getElementById("edit-proyectos")
+  textarea.addEventListener('keyup', (e) => {
+    logMessage(`key "${e.key}" released [event: keyup]`);
+    if (e.key=="Enter"){
+      document.getElementById("edit-proyectos").style.display="none"
+    }
+  });
+</script>
+  
+
+
 </body>
 </html>
