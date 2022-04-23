@@ -37,7 +37,7 @@
           </ul>
           
           <div class="btnLog">
-            <button type="button" class="btn" id="glogin" onclick="signIn();">login</button>
+            <button type="button" class="btn" id="glogin" onclick="signIn()">login</button>
           </div>
           
         </nav>  
@@ -53,8 +53,9 @@
         </div>
 
         <div id="info-data">
-          <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
-            <h1>Raúl Guanca</h1>
+          <div class="btn-edit" onclick="edit_name()"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+            <h1 id="p-name">Raúl Guanca</h1>
+            <input id="edit-name" type="text" oninput="editTextName(this.value)" style="display:none">
             <div id="info-main-skill"><h2>Full Stack Web Developer</h2></div>
             <div id="info-contact">
               <span>Tucumán (Argentina)</span>
@@ -93,7 +94,7 @@
         <p id="text-acercade">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis perspiciatis officia sed totam veritatis architecto deserunt aut asperiores nisi dolorum!</p>
       </div>
       <div>
-        <imput id="edit-acercade" type="text" oninput="editTextAcercaDe(this.value)" style="display:none">
+        <input id="edit-acercade" type="text" oninput="editTextAcercaDe(this.value)" style="display:none">
       </div>
     </div>
 
@@ -107,7 +108,7 @@
    </div>
       <p id="text-experiencia">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas voluptatem itaque odit suscipit quo nulla quisquam ea expedita fugiat. Tempora veniam animi, explicabo nisi, quaerat cumque id tempore repellendus est laborum, repellat quo esse tenetur eligendi adipisci cum accusamus ducimus!</p>
       <div>
-        <imput id="edit-experiencia" type="text" oninput="editTextExperiencia(this.value)" style="display:none">
+        <input id="edit-experiencia" type="text" oninput="editTextExperiencia(this.value)" style="display:none">
       </div>
       <h2>Educaci&oacute;n</h2>
       <div class="btn-edit" onclick="edit_educacion()">
@@ -118,7 +119,7 @@
       <p id="text-educacion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, consequuntur optio atque fuga assumenda corporis nobis expedita corrupti qui deleniti recusandae quibusdam, suscipit architecto deserunt commodi officia dolor in ut.</p>
     </div>
     <div>
-      <imput id="edit-educacion" type="text" oninput="editTextEducacion(this.value)" style="display:none">
+      <input id="edit-educacion" type="text" oninput="editTextEducacion(this.value)" style="display:none">
     </div>
     </div>
 
@@ -151,12 +152,36 @@
         <p id="text-proyectos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est magnam laudantium molestias eligendi dolore fugiat, sint dicta quos nulla laborum dignissimos a facilis. Totam voluptates eveniet deserunt culpa distinctio nobis mollitia magnam ullam velit. Quibusdam temporibus voluptatem excepturi incidunt?</p>
     </div>
     <div>
-      <imput id="edit-proyectos" type="text" oninput="editTextProyectos(this.value)" style="display:none">
+      <input id="edit-proyectos" type="text" oninput="editTextProyectos(this.value)" style="display:none">
     </div>
     </div>
   </div>    
 
   <script src="js/bootstrap.bundle.min.js"/></script>  
+
+  <script>
+    function edit_name(){
+      document.getElementById("edit-name").style.display="block";
+      let texto = document.getElementById("p-name").innerText;
+      console.log(texto);
+    };
+
+    function editTextName(new_text){
+      document.getElementById("p-name").innerText=new_text;
+    };
+
+    function logMessage(message) {
+      console.log(message + "<br>");
+    };
+
+    let texTareaNm=document.getElementById("edit-name")
+    texTareaNm.addEventListener('keyup', (e) => {
+      logMessage(`key "${e.key}" released [event: keyup]`);
+      if (e.key=="Enter"){
+        document.getElementById("edit-name").style.display="none"
+      }
+    });
+  </script>
 
     <script>
       function edit_acercade(){
@@ -174,7 +199,7 @@
       };
 
       let texTareaAd=document.getElementById("edit-acercade")
-      textarea.addEventListener('keyup', (e) => {
+      texTareaAd.addEventListener('keyup', (e) => {
         logMessage(`key "${e.key}" released [event: keyup]`);
         if (e.key=="Enter"){
           document.getElementById("edit-acercade").style.display="none"
@@ -198,7 +223,7 @@
   };
 
   let texTareaExp=document.getElementById("edit-experiencia")
-  textarea.addEventListener('keyup', (e) => {
+  texTareaExp.addEventListener('keyup', (e) => {
     logMessage(`key "${e.key}" released [event: keyup]`);
     if (e.key=="Enter"){
       document.getElementById("edit-experiencia").style.display="none"
@@ -222,7 +247,7 @@
   };
 
   let texTareaEd=document.getElementById("edit-educacion")
-  textarea.addEventListener('keyup', (e) => {
+  texTareaEd.addEventListener('keyup', (e) => {
     logMessage(`key "${e.key}" released [event: keyup]`);
     if (e.key=="Enter"){
       document.getElementById("edit-educacion").style.display="none"
@@ -246,7 +271,7 @@
   };
 
   let texTareaPry=document.getElementById("edit-proyectos")
-  textarea.addEventListener('keyup', (e) => {
+  texTareaPry.addEventListener('keyup', (e) => {
     logMessage(`key "${e.key}" released [event: keyup]`);
     if (e.key=="Enter"){
       document.getElementById("edit-proyectos").style.display="none"
