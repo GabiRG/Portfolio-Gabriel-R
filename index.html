@@ -9,18 +9,16 @@
     <link rel="stylesheet" href="scss/styles.css"/>
     <title>Portfolio Raúl Guanca</title>
 </head>
-<body>
-  <div class="grid-container">
+
+ <div class="grid-container">
   <header>
     <div class="nBarStyle">
       <nav class="navbar navbar-expand-xl navbar-dark bg-dark text-white">
       <a class="navbar-brand" href="index.html"><strong id="full-name">Raúl G. Guanca</strong></a>
-
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
           <ul class="navbar-nav flex-row ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="https://twitter.com/ra_gabg" target="_blank"><img src="images/twitter.png" alt="Twitter" title="Twitter" width="30px"></a>
@@ -34,24 +32,20 @@
             <li class="nav-item">
               <a class="nav-link" href="https://www.linkedin.com/in/ra%C3%BAl-gabriel-guanca-935828228/" target="_blank"><img src="images/linkedin.png" alt="linkedin" title="linkedin" width="30px"></a>
             </li>
-          </ul>
-          
+          </ul>          
           <div class="btnLog">
             <button type="button" class="btn" id="glogin" onclick="signIn()">login</button>
           </div>
-          
-        </nav>  
+      </div>          
+      </nav>  
     </div>
-  </header>
-  
-  
+  </header>  
     <div class="card mat-card" id="first-card">
       <div id="profile-background"><img src="images/background_keyboard.jpg"></div>
       <div id="info" style="padding: 16px">
         <div id="info-img">
           <img class="profile-image" src="images/gabriel_r_guanca.jpg" alt="Raúl Guanca">
         </div>
-
         <div id="info-data">
           <div class="btn-edit" onclick="edit_name()"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
             <h1 id="p-name">Raúl Guanca</h1>
@@ -60,8 +54,7 @@
             <div id="info-contact">
               <span>Tucumán (Argentina)</span>
               <span><a href="#">Información de contacto</a></span>
-            </div>          
-         
+            </div>         
             <img id="imgcon" src="images/conicet.png" alt="CONICET">
             <span id="conicet"><a href="https://www.conicet.gov.ar/" target="_blank">
               CONICET</a></span>
@@ -70,17 +63,13 @@
               Argentina Programa</a></span>       
         </div>
         </div>
-  
-
         <div id="info-actions">
           <button type="button" class="btn btn-primary">Intereses</button>
           <button type="button" class="btn btn-light">Añadir sección</button>
           <button type="button" class="btn btn-light">Más...</button>
         </div>
       </div>
-
     </div>
-
     <div class="card mat-card">
       <div class="card-titles">
         <h2>Acerca de</h2>
@@ -97,7 +86,6 @@
         <input id="edit-acercade" type="text" oninput="editTextAcercaDe(this.value)" style="display:none">
       </div>
     </div>
-
     <div class="card mat-card">
       <div class="card-titles">
       <h2>Experiencia</h2>
@@ -122,7 +110,6 @@
       <input id="edit-educacion" type="text" oninput="editTextEducacion(this.value)" style="display:none">
     </div>
     </div>
-
     <div class="card mat-card">
       <div class="progressBar">
         <h2>Hard Skills & Soft Skills</h2>
@@ -139,8 +126,8 @@
         </div>
          <p>JS</p>
       </div>
-    </div>
-    
+    </div>    
+  
     <div class="card mat-card">
       <div class="card-titles">
         <h2>Proyectos</h2>
@@ -148,14 +135,13 @@
           <a href="#" class="btn-right">
             <i class="fa fa-pen"></i>
          </a>
-     </div>
+         </div>
         <p id="text-proyectos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est magnam laudantium molestias eligendi dolore fugiat, sint dicta quos nulla laborum dignissimos a facilis. Totam voluptates eveniet deserunt culpa distinctio nobis mollitia magnam ullam velit. Quibusdam temporibus voluptatem excepturi incidunt?</p>
+      </div>
+        <div>
+         <input id="edit-proyectos" type="text" oninput="editTextProyectos(this.value)" style="display:none">
+        </div>
     </div>
-    <div>
-      <input id="edit-proyectos" type="text" oninput="editTextProyectos(this.value)" style="display:none">
-    </div>
-    </div>
-  </div>    
 
   <script src="js/bootstrap.bundle.min.js"/></script>  
 
